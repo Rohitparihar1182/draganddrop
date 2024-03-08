@@ -19,7 +19,7 @@ const Board = () => {
 	useEffect(() => {
 		if(isLoaded) return;
 		const prevData = localStorage.getItem('cards') as string;
-		if(prevData != null)setCards(JSON.parse(prevData)); 
+		if(prevData != null) setCards(JSON.parse(prevData)); 
 
 		setIsLoaded(true);
 	}, [])
